@@ -8,9 +8,29 @@ namespace ConsoleApp1
 {
     public class game
     {
+        private player player;
+        private store store;
+        private List<Day> days;
+        private int totalPlayDays;
+        private decimal TotalCash;
+        Random rnd = new Random();
 
 
-        private void DisplayWelcomeMessage()
+    public Game ()
+	{
+        DisplayIntro();
+        player = new Player();
+        player.GetUserName();
+        store = new store();
+        totalDaysPlay = 7;
+        days = new List<Day>()
+        {
+
+        }
+	}
+
+
+        private void DisplayIntro()
         {
             Console.WriteLine("Welcome to Lemonade Stand!");
         }
