@@ -43,8 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="customer.cs" />
+    <Compile Include="day.cs" />
+    <Compile Include="game.cs" />
+    <Compile Include="inventory.cs" />
+    <Compile Include="leaderboard.cs" />
+    <Compile Include="player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeBook.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="store.cs" />
+    <Compile Include="UserInterface.cs" />
+    <Compile Include="Weather.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
