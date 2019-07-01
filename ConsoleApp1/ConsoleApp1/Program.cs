@@ -11,7 +11,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             game game = new game();
-            game.DisplayIntro();
+            game.StartGame();
         }
  }  }
  

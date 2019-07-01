@@ -9,7 +9,7 @@ namespace ConsoleApp1
    public class UserInterface
     {
 
-        public static void DisplayIntro(player player)
+        public static void DisplayGreet(player player)
         {
             Console.WriteLine("");
             Console.WriteLine("Hello " + player.name + "!");

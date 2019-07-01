@@ -9,7 +9,7 @@ namespace ConsoleApp1
    public class Weather
     {
         private Random rnd;
-        private int  
+        private int  ;
         private string  descriptionOfWeather;
 
     }
