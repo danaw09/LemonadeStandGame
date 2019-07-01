@@ -19,7 +19,8 @@ namespace ConsoleApp1
 
         public void Startgame()
         {
-            Console.WriteLine("");
+            Console.WriteLine("hello");
+            Console.ReadLine();
         }
         
 	}
