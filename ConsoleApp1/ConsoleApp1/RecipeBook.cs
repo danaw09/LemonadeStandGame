@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class RecipeBook
+   public class RecipeBook
     {
-    }
+        private int lemonUsed;
+        private int sugarUsed;
+        private int iceUsed;
+        private float pricePerCup;
+
+        
+
+
+
+    }   
 }

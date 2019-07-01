@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class day
+    public class day
     {
         private string name;
         private  int number;

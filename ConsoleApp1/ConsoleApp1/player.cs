@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class player
+    public class player
     {
         private int weeklyProfits;
         public inventory inventory;
-        private string name;
+        public string name;
         public RecipeBook recipeBook;
 
 
@@ -21,5 +21,5 @@ namespace ConsoleApp1
 
         }
 
-    }
-}
+
+ }   }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class inventory
+    public class inventory
     {
+     
+
     }
 }

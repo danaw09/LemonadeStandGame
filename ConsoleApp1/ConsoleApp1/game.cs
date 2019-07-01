@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class game
+    public class game
     {
+
+
+        private void DisplayWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to Lemonade Stand!");
+        }
+
+        public void StartGame()
+        {
+           
+        }
     }
+
 }
