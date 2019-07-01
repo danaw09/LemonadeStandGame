@@ -8,5 +8,10 @@ namespace ConsoleApp1
 {
     class customer
     {
+        private double askingPriceToPay;
+        private double chanceToBuy;
+        private double offsetAmount;
+        private Random rnd;
+        private day day;
     }
 }
