@@ -19,8 +19,19 @@ namespace ConsoleApp1
 
         public void Startgame()
         {
-            Console.WriteLine("hello");
-            Console.ReadLine();
+           
+        }
+
+        private void GetInfo()
+        {
+            Console.WriteLine("Hello and Welcome");
+        }
+        
+        public game()
+        {
+            GetInfo();
+            player = new player();
+            //player.
         }
         
 	}
