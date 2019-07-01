@@ -20,15 +20,12 @@ namespace ConsoleApp1
 	}
 
 
-        private void DisplayGreet()
-        {
-            Console.WriteLine("Welcome to Lemonade Stand!");
-        }
+        
 
         public void StartGame()
         {
-           DisplayIntro();
+          
         }
-    }
+    
 
 }
