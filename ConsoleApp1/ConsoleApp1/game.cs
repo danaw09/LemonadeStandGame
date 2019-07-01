@@ -23,13 +23,13 @@ namespace ConsoleApp1
         player.GetUserName();
         store = new store();
         totalDaysPlay = 7;
-        days = new List<Day>()
+        days = new List<day>()
         {
-         new Day(rnd) { Name = "Monday", Number = 1, weather = new Weather(rnd), report = new Report(player) },
-         new Day(rnd) { Name = "Tuesday", Number = 2, weather = new Weather(rnd), report = new Report(player) },
-         new Day(rnd) { Name = "Wenesday", Number = 3, weather = new Weather(rnd), report = new Report(player) },
-         new Day(rnd) { Name = "Thrusday", Number = 4, weather = new Weather(rnd), report = new Report(player) },
-          new Day(rnd) { Name = "Friday", Number = 4, weather = new Weather(rnd), report = new Report(player) }
+         new day(rnd) { Name = "Monday", Number = 1, weather = new Weather(rnd), report = new Report(player) },
+         new day(rnd) { Name = "Tuesday", Number = 2, weather = new Weather(rnd), report = new Report(player) },
+         new day(rnd) { Name = "Wenesday", Number = 3, weather = new Weather(rnd), report = new Report(player) },
+         new day(rnd) { Name = "Thrusday", Number = 4, weather = new Weather(rnd), report = new Report(player) },
+          new day(rnd) { Name = "Friday", Number = 5, weather = new Weather(rnd), report = new Report(player) }
 
         };
 	}
