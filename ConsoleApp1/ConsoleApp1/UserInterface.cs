@@ -9,7 +9,7 @@ namespace ConsoleApp1
    public class UserInterface
     {
 
-        public static void DisplayInstructions(player player)
+        public static void DisplayIntro(player player)
         {
             Console.WriteLine("");
             Console.WriteLine("Hello " + player.name + "!");
@@ -19,7 +19,7 @@ namespace ConsoleApp1
             Console.WriteLine("Before you begin you will buy Cups, Lemons, Sugar and Ice to create your recipe.");
             Console.WriteLine("After the day is over, you will need to re-stock your supplies and see how much you made.");
             Console.WriteLine("If sales were low, you may need to adjust your recipe based on the weather forecast to maximize your profits.");
-            Console.WriteLine("Lets get started.....");
+            Console.WriteLine("Ready to play?....");
             Console.WriteLine();
 
         }

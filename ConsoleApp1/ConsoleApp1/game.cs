@@ -25,8 +25,13 @@ namespace ConsoleApp1
         totalDaysPlay = 7;
         days = new List<Day>()
         {
+         new Day(rnd) { Name = "Monday", Number = 1, weather = new Weather(rnd), report = new Report(player) },
+         new Day(rnd) { Name = "Tuesday", Number = 2, weather = new Weather(rnd), report = new Report(player) },
+         new Day(rnd) { Name = "Wenesday", Number = 3, weather = new Weather(rnd), report = new Report(player) },
+         new Day(rnd) { Name = "Thrusday", Number = 4, weather = new Weather(rnd), report = new Report(player) },
+          new Day(rnd) { Name = "Friday", Number = 4, weather = new Weather(rnd), report = new Report(player) }
 
-        }
+        };
 	}
 
 
@@ -37,7 +42,7 @@ namespace ConsoleApp1
 
         public void StartGame()
         {
-           
+           DisplayIntro();
         }
     }
 
