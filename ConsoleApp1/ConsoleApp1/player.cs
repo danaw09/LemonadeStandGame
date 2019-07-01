@@ -8,11 +8,11 @@ namespace ConsoleApp1
 {
     public class player
     {
-        private int weeklyCash;
+        private float weeklyProfits;
         public inventory inventory;
         public string name;
         public RecipeBook recipeBook;
-        private float currentCash;
+        public float currentCash;
         private int overallCashRd;
 
 
@@ -30,5 +30,48 @@ namespace ConsoleApp1
             name = Console.ReadLine();
             return name;
         }
+        internal void CheckWallet()
+        {
+            if (currentCash <= 0)
+            {
+                UserInterface.GameOver();
+                Environment.Exit(0);
+            }
+            else
+            {
+                return;
+            }
+        }
+        public float CashOnHand
+        {
+            get
+            {
+                return currentCash;
+            }
+            set
+            {
+                currentCash = value;
+            }
 
- }   }
+        }
+
+        public float WeeklyProfits
+        {
+            get
+            {
+                return weeklyProfits;
+            }
+            set
+            {
+                weeklyProfits = value;
+            }
+        }
+
+
+
+
+
+    }
+}
+
+
