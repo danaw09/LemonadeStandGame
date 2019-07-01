@@ -16,16 +16,18 @@ namespace ConsoleApp1
         Random rnd = new Random();
 
 
+
+        public void Startgame()
+        {
+            Console.WriteLine("");
+        }
         
 	}
 
 
         
 
-        public void StartGame()
-        {
-          
-        }
+        
     
 
 }
