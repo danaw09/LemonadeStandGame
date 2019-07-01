@@ -10,11 +10,20 @@ namespace ConsoleApp1
     {
         private string name;
         private int number;
-        private int totalCustomers;
+        private readonly string totalCustomers;
         internal Weather weather;
         internal Report report;
         public List<customer> customers = new List<customer>();
         Random rnd = new Random();
 
+    }
+    public Day(Random rnd)
+    {
+        this.rnd = rnd;
+        totalCustomers = rnd.Next(50, 100);
+        for (int i = 1; i <= totalCustomers; i++)
+        {
+            customers.Add(new Customer(rnd, this));
+        }
     }
 }
