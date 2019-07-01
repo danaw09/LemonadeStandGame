@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class customer
+    private class Customer
     {
-        private double askingPriceToPay;
+        private  double askingPriceToPay;
         private double chanceToBuy;
-        private double offsetAmount;
+        private  double offsetAmount;
         private Random rnd;
         private day day;
     }
