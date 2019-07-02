@@ -18,14 +18,13 @@ namespace ConsoleApp1
         {
             
             Console.WriteLine("Hello " + player.name + "!");
-            Console.WriteLine();
             Console.WriteLine("These are rules to help you determine how to play.....");
             Console.WriteLine("You are the owner of a Lemonade Stand and you are responsible for purchasing all of your stock!");
             Console.WriteLine("Before you begin you will buy Cups, Lemons, Sugar and Ice to create your recipe.");
-            Console.WriteLine("After the day is over, you will need to re-stock your supplies and see how much you made.");
+            Console.WriteLine("You will have 7 days to make as much money as you can.");
             Console.WriteLine("If sales were low, you may need to adjust your recipe based on the weather forecast to maximize your profits.");
             Console.WriteLine("Ready to play?....");
-            Console.WriteLine();
+            Console.ReadLine();
             
 
 
