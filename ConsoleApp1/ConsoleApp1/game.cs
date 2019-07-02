@@ -33,6 +33,11 @@ namespace ConsoleApp1
             player = new player();
             //player.
         }
+
+        public void MainMenu()
+        {
+        
+        }
         
 	}
 
