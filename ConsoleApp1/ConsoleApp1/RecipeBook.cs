@@ -8,12 +8,13 @@ namespace ConsoleApp1
 {
    public class RecipeBook
     {
-        private int lemonUsed;
-        private int sugarUsed;
-        private int iceUsed;
-        private float pricePerCup;
+        public int lemon;
+        public int sugar;
+        public int ice;
+        public int cup;
+        public double lemonadePrice;
 
-        
+
 
 
 
