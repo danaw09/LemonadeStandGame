@@ -23,9 +23,7 @@ namespace ConsoleApp1
             inventorys.Add(new inventory("cup", cupPrice, "each", "cup"));
         }
 
-        public List<inventory> Inventories
-        {
-        }
+        
 
     }
 

@@ -13,6 +13,10 @@ namespace ConsoleApp1
         string unit;
         string recipePart;
 
+        public inventory()
+        {
+        }
+
         public inventory(string name, double price, string unit, string recipePart)
         {
             this.name = name;
