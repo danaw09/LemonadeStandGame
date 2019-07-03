@@ -38,6 +38,9 @@ namespace ConsoleApp1
             }
             return temperature;
         }
+
+        
+
         public int GetOvercast(Random rnd)
         {
             int condition = rnd.Next(1, 4);

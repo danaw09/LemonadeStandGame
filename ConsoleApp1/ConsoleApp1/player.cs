@@ -13,7 +13,7 @@ namespace ConsoleApp1
         public string name;
         public RecipeBook recipeBook;
         public float currentCash;
-        private int overallCashRd;
+       
         public player player1;
 
         public player()

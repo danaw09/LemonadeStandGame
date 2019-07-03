@@ -8,10 +8,10 @@ namespace ConsoleApp1
 {
     public class inventory
     {
-        string name;
-        double price;
-        string unit;
-        string recipePart;
+        private string name;
+        private double price;
+       private string unit;
+       private string recipePart;
 
         public inventory()
         {

@@ -28,6 +28,7 @@ namespace ConsoleApp1
         {
             UserInterface.GetGreet();
             Weather.DisplayCurrentWeather();
+           
         }
 
         private void GetInfo()
