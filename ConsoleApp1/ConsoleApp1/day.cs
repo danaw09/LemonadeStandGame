@@ -12,9 +12,14 @@ namespace ConsoleApp1
         private  int number;
         private  string totalCustomers;
         internal Weather weather;
-        internal Report report;
+       
         public List<Customer> customers = new List<Customer>();
         Random rnd = new Random();
+        private Random random;
 
+        public day(Random random)
+        {
+            this.random = random;
+        }
     }
 }

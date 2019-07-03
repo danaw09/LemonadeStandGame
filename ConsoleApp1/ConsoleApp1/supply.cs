@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class supply
+   public abstract class supply
     {
+        public string name;
+        public double price;
+
     }
 }

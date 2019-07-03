@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class lemonade
+    class lemonade:supply
     {
+        public lemonade()
+        {
+            name = "lemonade";
+
+
+        }
     }
 }

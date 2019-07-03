@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class cups
+    public class cups:supply
     {
+        private double cupCost = .05;
+        private string cupName;
+        
+        public double GetCost()
+        {
+            return cupCost;
+        }
+        public void setCupName()
+        {
+            cupName = "Cups";
+        }
+        public string getCupName()
+        {
+            return cupName;
+        }
+         
     }
 }
+

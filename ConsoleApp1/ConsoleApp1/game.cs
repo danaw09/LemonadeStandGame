@@ -8,18 +8,26 @@ namespace ConsoleApp1
 {
     public class game
     {
-        private player player;
-        private store store;
-        private List<day> days;
-        private int totalPlayDays;
-        private decimal TotalCash;
-        Random rnd = new Random();
+        public Random random;
+        public Weather Weather;
+        public player player;
+        public store store;
+        public day day;
+        public int randomValue;
 
-
+        public game()
+        {
+            random = new Random();
+            Weather = new Weather(random);
+            player = new player();
+            store = new store();
+            day = new day(random);
+        }
 
         public void Startgame()
         {
-           
+            UserInterface.GetGreet();
+            Weather.DisplayCurrentWeather();
         }
 
         private void GetInfo()
@@ -27,16 +35,11 @@ namespace ConsoleApp1
             Console.WriteLine("Hello and Welcome");
         }
         
-        public game()
-        {
-            GetInfo();
-            player = new player();
-            //player.
-        }
+        
 
         public void MainMenu()
         {
-        
+    
         }
         
 	}

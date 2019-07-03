@@ -10,7 +10,12 @@ namespace ConsoleApp1
     {
         public string temperature;
         public string condition;
+        private Random random;
 
+        public Weather(Random random)
+        {
+            this.random = random;
+        }
 
         public int GetTemp(Random rnd)
         {

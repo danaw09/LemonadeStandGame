@@ -12,6 +12,7 @@ namespace ConsoleApp1
         {
             game game = new game();
             game.Startgame();
+            Console.ReadKey();
         }
  }  }
  
