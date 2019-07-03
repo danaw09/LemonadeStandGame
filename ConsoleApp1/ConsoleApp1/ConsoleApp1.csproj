@@ -47,6 +47,7 @@
     <Compile Include="customer.cs" />
     <Compile Include="day.cs" />
     <Compile Include="game.cs" />
+    <Compile Include="Human.cs" />
     <Compile Include="ice.cs" />
     <Compile Include="inventory.cs" />
     <Compile Include="lemon.cs" />

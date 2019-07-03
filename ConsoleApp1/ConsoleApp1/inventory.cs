@@ -8,14 +8,47 @@ namespace ConsoleApp1
 {
     public class inventory
     {
-        List<lemon> lemons = new List<lemon>();
-        List<sugar> sugar = new List<sugar>();
-        List<ice> ice = new List<ice>();
-        List<cups> cups = new List<cups>();
+        string name;
+        double price;
+        string unit;
+        string recipePart;
+
+        public inventory(string name, double price, string unit, string recipePart)
+        {
+            this.name = name;
+            this.price = price;
+            this.unit = unit;
+            this.recipePart = recipePart;
+        }
+
+        public string Name
+        {
+            get { return name; }
+            private set { name = value; }
+        }
+
+        public double Price
+        {
+            get { return price; }
+            private set { price = value; }
+        }
+
+        public string RecipePart
+        {
+            get { return recipePart; }
+            private set { recipePart = value; }
+        }
+
+        public string Unit
+        {
+            get { return unit; }
+            private set { unit = value; }
+        }
 
 
 
-         
+
+
 
     }
 }
