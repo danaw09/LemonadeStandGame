@@ -8,9 +8,9 @@ namespace ConsoleApp1
 {
    public class RecipeBook
     {
-        public int lemon = 4;
-        public int sugar = 4;
-        public int ice = 20;
+        public int lemon = 2;
+        public int sugar = 2;
+        public int ice = 10;
         public int cup = 10;
         public double lemonadePrice;
 
