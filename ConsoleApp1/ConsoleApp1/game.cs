@@ -14,6 +14,7 @@ namespace ConsoleApp1
         public store store;
         public day day;
         public int randomValue;
+        private inventory inventory;
 
         public game()
         {
@@ -24,6 +25,7 @@ namespace ConsoleApp1
             day = new day(random);
         }
 
+       
         public void Startgame()
         {
             UserInterface.GetGreet();
@@ -40,7 +42,93 @@ namespace ConsoleApp1
 
         public void MainMenu()
         {
-    
+            Console.WriteLine(" type in the number of the menu item you would like to select.\n\n");
+            Console.WriteLine("1: Rules\n\n2: Weather\n\n3: Check Wallet\n\n4: Run to the store\n\n5: Check inventory\n\n6: Check recipe and make Lemonade.\n\n7: Set price and play game");
+            string value = Console.ReadLine();
+
+            switch (value)
+            {
+                //Rules
+                case "1":
+                    Console.Clear();
+                    UserInterface.GetGreet();
+                    break;
+
+                //Weather
+                case "2":
+                    Console.Clear();
+                    Weather.DisplayCurrentWeather();
+                    Weather.Current();
+                    Console.WriteLine("please hit [enter] to go to the main meun.");
+                    Console.ReadLine();
+                    Console.Clear();
+                    MainMenu();
+                    break;
+
+                //Wallet
+                case "3":
+                    Console.Clear();
+                    player.CheckWallet();
+                    Console.ReadLine();
+                    Console.Clear();
+                    MainMenu();
+                    break;
+
+                //store
+                case "4":
+                    Console.Clear();
+                    store.Restock(player);
+                    Console.ReadLine();
+                    Console.Clear();
+                    MainMenu();
+                    break;
+
+                //inventory
+                case "5":
+                    Console.Clear();
+                    player.inventory.ShowAllProductInventory();
+                    Console.ReadLine();
+                    Console.Clear();
+                    MainMenu();
+                    break;
+
+                //pitchers
+                case "6":
+                    Console.Clear();
+                    player.inventory.ShowAllProductInventory();
+                    player.recipe.ChooseRecipe();
+                    player.inventory.RemoveItemAfterLemonadeWasMade(player);
+                    Console.WriteLine("You now have {0} cups of lemonade!!", (player.recipe.numberOfPitchers * player.recipe.cupsForRecipe));
+                    day.CalculatingWhenToStopSelling(player);
+                    Console.ReadLine();
+                    Console.Clear();
+                    MainMenu();
+                    break;
+
+                //Set price and Play Game
+                case "7":
+                    Console.Clear();
+                    day.PriceOfCup();
+                    for (int d = 1; d <= 7; d++)
+                    {
+
+                        for (int i = 0; i < day.stopSelling; i++)
+                        {
+                            day.customers[i].DeterminesCustomerBuys(day.weather, day, randomValue);
+                        }
+                        day.SellLemonade(player);
+                        MainMenu();
+                    }
+                    player.wallet.thisWeeksEarnings();
+                    Console.ReadLine();
+                    RestartGame();
+                    Console.Clear();
+                    break;
+                default:
+                    Console.WriteLine("Sorry, that we don't have an option for that.\n\n");
+                    MainMenu();
+                    break;
+            }
         }
 
 
@@ -53,5 +141,5 @@ namespace ConsoleApp1
 
         
     
-
+    
 }

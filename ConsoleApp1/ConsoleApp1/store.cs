@@ -14,15 +14,20 @@ namespace ConsoleApp1
         static double iceCubePrice = 0.10;
         static double cupPrice = 0.10;
 
-        public store()
+        public void Store()
         {
             inventorys = new List<inventory>();
             inventorys.Add(new inventory("lemon", lemonPrice, "each", "pitcher"));
             inventorys.Add(new inventory("sugar", sugarPrice, "cup", "pitcher"));
             inventorys.Add(new inventory("ice cube", iceCubePrice, "each", "cup"));
             inventorys.Add(new inventory("cup", cupPrice, "each", "cup"));
-        }
 
+            
+        }
+        public List<inventory> inventory
+        {
+        
+        }
         
     }
 
