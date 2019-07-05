@@ -13,4 +13,6 @@ namespace ConsoleApp1
             price = .05;
             name = "sugar";
         }
- }   }
+
+        public static int Count { get; internal set; }
+    }   }

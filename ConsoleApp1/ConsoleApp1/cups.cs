@@ -10,7 +10,9 @@ namespace ConsoleApp1
     {
         private double cupCost = .05;
         private string cupName;
-        
+
+        public static int Count { get; internal set; }
+
         public double GetCost()
         {
             return cupCost;

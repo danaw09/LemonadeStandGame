@@ -13,5 +13,7 @@ namespace ConsoleApp1
             price = .05;
             name = "ice";
         }
+
+        public static int Count { get; internal set; }
     }
 }
