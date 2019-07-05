@@ -67,10 +67,7 @@ namespace ConsoleApp1
             }
         }
 
-
-
-
-
+        public object RecipeBook { get; internal set; }
     }
 }
 
