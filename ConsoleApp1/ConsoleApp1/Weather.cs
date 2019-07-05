@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-   public class Weather
+    public class Weather
     {
         public string temperature;
         public string condition;
@@ -39,7 +39,7 @@ namespace ConsoleApp1
             return temperature;
         }
 
-        
+
 
         public int GetOvercast(Random rnd)
         {
@@ -69,9 +69,24 @@ namespace ConsoleApp1
         public void DisplayForecast()
         {
             Console.WriteLine($"The weather for tomorrow is: {temperature} {condition}\n");
-        }
-    }
 
+        }
+
+        public void Current()
+        {
+            List<string> weatherForcase = new List<string> { "Tomorrow's", "The next day's", "And the day after that's" };
+           
+
+            {
+                GetOvercast(random);
+                GetTemp(random);
+                //Console.WriteLine(" forecast is: {0} {1}  \n\n", GetOvercast, GetTemp);
+            }
+
+
+        }
+
+    }
 }
 
 
