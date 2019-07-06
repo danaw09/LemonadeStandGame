@@ -79,7 +79,7 @@ namespace ConsoleApp1
                 //store
                 case "4":
                     Console.Clear();
-
+                    store.GetItems(player);
                     Console.ReadLine();
                     Console.Clear();
                     MainMenu();
@@ -98,8 +98,7 @@ namespace ConsoleApp1
                 case "6":
                     Console.Clear();
                     player.inventory.Getnventory();
-                    player.inventory.Getnventory();
-                    player.inventory.Getnventory();
+                    MainMenu();
                     Console.WriteLine("You now have {0} cups of lemonade!!");
                     //day.
                    

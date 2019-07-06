@@ -12,13 +12,9 @@ namespace ConsoleApp1
 
         internal static void GameOver()
         {
-            Console.WriteLine();
-            Console.WriteLine("----------------------------------------");
-            Console.WriteLine();
-            Console.WriteLine("You have run out of money! Sorry the game is over....");
-            Console.WriteLine();
-            Console.WriteLine("-----------------------------------------");
-            Console.ReadKey();
+           
+            Console.WriteLine("Game Over Loser....");
+            
           
         }
       internal static void GetGreet()
