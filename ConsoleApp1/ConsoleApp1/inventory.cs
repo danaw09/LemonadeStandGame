@@ -49,6 +49,13 @@ namespace ConsoleApp1
             private set { unit = value; }
         }
 
+        public void Getnventory()
+        {
+            Console.WriteLine("You currently have {0} lemons.\n\n", lemon.Count);
+            Console.WriteLine("You currently have {0} cups of sugar.\n\n", sugar.Count);
+            Console.WriteLine("You currently have {0} ice cubes.\n\n", ice.Count);
+            Console.WriteLine("You currently have {0} cups.\n\n", cups.Count);
+        }
 
 
 

@@ -80,7 +80,7 @@ namespace ConsoleApp1
             {
                 GetOvercast(random);
                 GetTemp(random);
-                //Console.WriteLine(" forecast is: {0} {1}  \n\n", GetOvercast, GetTemp);
+               
             }
 
 

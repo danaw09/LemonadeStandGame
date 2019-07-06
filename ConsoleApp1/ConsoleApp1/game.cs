@@ -25,20 +25,22 @@ namespace ConsoleApp1
             day = new day(random);
         }
 
-       
+
         public void Startgame()
         {
             UserInterface.GetGreet();
-            Weather.DisplayCurrentWeather();
+            // Weather.DisplayCurrentWeather();
+            //
             Weather.DisplayForecast();
+            MainMenu();
         }
 
         private void GetInfo()
         {
             Console.WriteLine("Hello and Welcome");
         }
-        
-        
+
+
 
         public void MainMenu()
         {
@@ -77,7 +79,7 @@ namespace ConsoleApp1
                 //store
                 case "4":
                     Console.Clear();
-                    store.Restock(player);
+
                     Console.ReadLine();
                     Console.Clear();
                     MainMenu();
@@ -86,7 +88,7 @@ namespace ConsoleApp1
                 //inventory
                 case "5":
                     Console.Clear();
-                    player.inventory.ShowAllProductInventory();
+                    player.inventory.Getnventory();
                     Console.ReadLine();
                     Console.Clear();
                     MainMenu();
@@ -95,46 +97,46 @@ namespace ConsoleApp1
                 //pitchers
                 case "6":
                     Console.Clear();
-                    player.inventory.ShowAllProductInventory();
-                    player.recipe.ChooseRecipe();
-                    player.inventory.RemoveItemAfterLemonadeWasMade(player);
-                    Console.WriteLine("You now have {0} cups of lemonade!!", (player.recipe.numberOfPitchers * player.recipe.cupsForRecipe));
-                    day.CalculatingWhenToStopSelling(player);
+                    player.inventory.Getnventory();
+                    player.inventory.Getnventory();
+                    player.inventory.Getnventory();
+                    Console.WriteLine("You now have {0} cups of lemonade!!");
+                    //day.
                     Console.ReadLine();
                     Console.Clear();
                     MainMenu();
                     break;
 
-                //Set price and Play Game
-                case "7":
-                    Console.Clear();
-                    day.PriceOfCup();
-                    for (int d = 1; d <= 7; d++)
-                    {
+                    //Set price and Play Game
+                    // case "7":
+                    // Console.Clear();
+                    // day.PriceOfCup();
+                    // for (int d = 1; d <= 7; d++)
+                    // {
 
-                        for (int i = 0; i < day.stopSelling; i++)
-                        {
-                            day.customers[i].DeterminesCustomerBuys(day.weather, day, randomValue);
-                        }
-                        day.SellLemonade(player);
-                        MainMenu();
-                    }
-                    player.wallet.thisWeeksEarnings();
-                    Console.ReadLine();
-                    RestartGame();
-                    Console.Clear();
-                    break;
-                default:
-                    Console.WriteLine("Sorry, that we don't have an option for that.\n\n");
-                    MainMenu();
-                    break;
+                    //     for (int i = 0; i < day.stopSelling; i++)
+                    //     {
+                    //         day.customers[i].DeterminesCustomerBuys(day.weather, day, randomValue);
+                    //      }
+                    //      day.SellLemonade(player);
+                    //      MainMenu();
             }
+            //  player.wallet.thisWeeksEarnings();
+            //  Console.ReadLine();
+            //  RestartGame();
+            //Console.Clear();
+            // break;
+            // default:
+            // Console.WriteLine("Sorry, that we don't have an option for that.\n\n");
+            //  MainMenu();
+            //  break;
         }
+    }
 
 
 
-        
-	}
+
+}	
 
 
         
@@ -142,4 +144,4 @@ namespace ConsoleApp1
         
     
     
-}
+

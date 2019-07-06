@@ -15,9 +15,6 @@ namespace ConsoleApp1
             this.random = random;
         }
 
-        public day()
-        {
-
-        }
+        
     }
 }

@@ -9,10 +9,10 @@ namespace ConsoleApp1
     public class store
     {
         List<inventory> inventorys;
-        static double lemonPrice = 0.10;
-        static double sugarPrice = 0.10;
-        static double iceCubePrice = 0.10;
-        static double cupPrice = 0.10;
+          static double lemonPrice = 0.10;
+         static double sugarPrice = 0.10;
+         static double iceCubePrice = 0.10;
+         static double cupPrice = 0.10;
 
         public void Store()
         {
@@ -22,17 +22,21 @@ namespace ConsoleApp1
             inventorys.Add(new inventory("ice cube", iceCubePrice, "each", "cup"));
             inventorys.Add(new inventory("cup", cupPrice, "each", "cup"));
 
-            
+
         }
-        public List<inventory> inventory
+
+        public List<inventory> Inventories { get; private set; }
+
+        public static double BaseCupCost
         {
-        
+            get { return lemonPrice * 2 + sugarPrice + iceCubePrice * 5 + cupPrice; }
         }
-        
     }
 
-}
 
+
+
+}
 
 
     
