@@ -102,6 +102,7 @@ namespace ConsoleApp1
                     player.inventory.Getnventory();
                     Console.WriteLine("You now have {0} cups of lemonade!!");
                     //day.
+                   
                     Console.ReadLine();
                     Console.Clear();
                     MainMenu();
