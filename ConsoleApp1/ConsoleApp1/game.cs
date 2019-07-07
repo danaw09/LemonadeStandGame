@@ -124,18 +124,24 @@ namespace ConsoleApp1
                     //     {
                     //         day.customers[i].DeterminesCustomerBuys(day.weather, day, randomValue);
                     //      }
+                    player.CheckWallet();
+                    Console.ReadLine();
+                    RePlayGame();
+                    MainMenu();
+                    Console.Clear();
+                     break;
+                    default:
+                     Console.WriteLine("Sorry, that we don't have an option for that.\n\n");
+                     MainMenu();
+                      break;
+
+
+
+
                     //      day.SellLemonade(player);
-                    //      MainMenu();
+
             }
-                 player.CheckWallet();
-                 Console.ReadLine();
-                  RePlayGame();
-                  Console.Clear();
-            break;
-                default:
-                 Console.WriteLine("Sorry, that we don't have an option for that.\n\n");
-                  MainMenu();
-                  break;
+                 
 
 
         }
