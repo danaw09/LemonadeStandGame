@@ -46,9 +46,21 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Would you like to replay the game? [Y] or [N]");
             string answer = Console.ReadLine().ToUpper();
-        }
+            switch (answer)
+            {
+                case "Y":
+                    UserInterface.GetGreet();
+                    break;
+                case "N":
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.WriteLine("Sorry, that we don't have an option for that.\n\n");
+                    break;
+            }
 
-        public void MainMenu()
+        }
+            public void MainMenu()
         {
             Console.WriteLine(" type in the number of the menu item you would like to select.\n\n");
             Console.WriteLine("1: Rules\n\n2: Weather\n\n3: Check Wallet\n\n4: Run to the store\n\n5: Check inventory\n\n6: Check recipe and make Lemonade.\n\n7: Set price and play game");
@@ -116,14 +128,6 @@ namespace ConsoleApp1
                
                 case "7":
                      Console.Clear();
-                    // day.PriceOfCup();
-                    // for (int d = 1; d <= 7; d++)
-                    // {
-
-                    //     for (int i = 0; i < day.stopSelling; i++)
-                    //     {
-                    //         day.customers[i].DeterminesCustomerBuys(day.weather, day, randomValue);
-                    //      }
                     player.CheckWallet();
                     Console.ReadLine();
                     RePlayGame();
@@ -139,9 +143,16 @@ namespace ConsoleApp1
 
 
                     //      day.SellLemonade(player);
+                    //day.DisplayCustomRecipe();
+                    // for (int d = 1; d <= 7; d++)
+                    // {
 
+                    //     for (int i = 0; i < day.stopSelling; i++)
+                    //     {
+                    //         day.customers[i].DeterminesCustomerBuys(day.weather, day, randomValue);
+                    //      }
             }
-                 
+
 
 
         }
