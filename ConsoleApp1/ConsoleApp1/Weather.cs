@@ -11,6 +11,7 @@ namespace ConsoleApp1
         public string temperature;
         public string condition;
         private Random random;
+        
 
         public Weather(Random random)
         {
@@ -64,11 +65,13 @@ namespace ConsoleApp1
         }
         public void DisplayCurrentWeather()
         {
-            Console.WriteLine($"Today's forcast is: {temperature} {condition}\n");
+            
+            Console.WriteLine($"Today's forcast is: {80} sunny \n");
         }
         public void DisplayForecast()
         {
-            Console.WriteLine($"The weather for tomorrow is: {temperature} {condition}\n");
+            
+            Console.WriteLine($"The weather for tomorrow is: {80} sunny \n");
 
         }
 

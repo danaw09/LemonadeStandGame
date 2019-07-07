@@ -60,7 +60,7 @@ namespace ConsoleApp1
                 case "2":
                     Console.Clear();
                     Weather.DisplayCurrentWeather();
-                    Weather.Current();
+                    Weather.GetOvercast(random);
                     Console.WriteLine("please hit [enter] to go to the main meun.");
                     Console.ReadLine();
                     Console.Clear();
