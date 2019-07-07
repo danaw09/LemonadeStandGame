@@ -35,12 +35,18 @@ namespace ConsoleApp1
             MainMenu();
         }
 
+
+
         private void GetInfo()
         {
             Console.WriteLine("Hello and Welcome");
         }
 
-
+        public void RePlayGame()
+        {
+            Console.WriteLine("Would you like to replay the game? [Y] or [N]");
+            string answer = Console.ReadLine().ToUpper();
+        }
 
         public void MainMenu()
         {
@@ -107,9 +113,9 @@ namespace ConsoleApp1
                     MainMenu();
                     break;
 
-                    //Set price and Play Game
-                    // case "7":
-                    // Console.Clear();
+               
+                case "7":
+                     Console.Clear();
                     // day.PriceOfCup();
                     // for (int d = 1; d <= 7; d++)
                     // {
@@ -121,15 +127,17 @@ namespace ConsoleApp1
                     //      day.SellLemonade(player);
                     //      MainMenu();
             }
-            //  player.wallet.thisWeeksEarnings();
-            //  Console.ReadLine();
-            //  RestartGame();
-            //Console.Clear();
-            // break;
-            // default:
-            // Console.WriteLine("Sorry, that we don't have an option for that.\n\n");
-            //  MainMenu();
-            //  break;
+                 player.CheckWallet();
+                 Console.ReadLine();
+                  RePlayGame();
+                  Console.Clear();
+            break;
+                default:
+                 Console.WriteLine("Sorry, that we don't have an option for that.\n\n");
+                  MainMenu();
+                  break;
+
+
         }
     }
 
