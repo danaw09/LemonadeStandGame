@@ -50,9 +50,9 @@ namespace ConsoleApp1
         }
         public int ChooseNumberOfPitchers()
         {
-            Console.WriteLine("Things to keep in mind:");
-            Console.WriteLine("1. The weather (the hotter it is the more cups you may sell)");
-            Console.WriteLine("2. You can not save unused lemonade you did not sell the previous day.\n\n");
+            Console.WriteLine("pay attention to the weather:");
+            Console.WriteLine("1. the hotter it is the more cups you may sell");
+            Console.WriteLine("2. You can not save .\n\n");
             Console.WriteLine("How many pitchers do you want to make?");
             try
             {
