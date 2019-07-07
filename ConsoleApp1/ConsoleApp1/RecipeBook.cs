@@ -9,11 +9,11 @@ namespace ConsoleApp1
     public class RecipeBook
     {
 
-        public int numberOfPitchers;
-        public int removeLemonsFromInventory;
-        public int removeSugarFromInventory;
-        public int removeIceFromInventory;
-        public int removeCupFromInventory;
+        public int Pitchers;
+        public int Lemon;
+        public int Sugar;
+        public int  Icee;
+        public int Cups;
         int lemonsForRecipe = 6;
         int sugarForRecipe = 7;
         int iceForRecipe = 25;
@@ -57,8 +57,8 @@ namespace ConsoleApp1
             try
             {
                 int numberOfPitchers = int.Parse(Console.ReadLine());
-                this.numberOfPitchers = numberOfPitchers;
-                return this.numberOfPitchers;
+                Pitchers = Pitchers;
+                return this.Pitchers;
             }
             catch (Exception)
             {
@@ -122,8 +122,8 @@ namespace ConsoleApp1
         {
             try
             {
-                removeLemonsFromInventory = numberOfPitchers * lemonsForRecipe;
-                return removeLemonsFromInventory;
+                Lemon = Pitchers * lemonsForRecipe;
+                return Lemon;
             }
             catch (Exception)
             {
@@ -137,8 +137,8 @@ namespace ConsoleApp1
         {
             try
             {
-                removeSugarFromInventory = numberOfPitchers * sugarForRecipe;
-                return removeSugarFromInventory;
+                Sugar = Pitchers * sugarForRecipe;
+                return Sugar;
             }
             catch (Exception)
             {
@@ -152,8 +152,8 @@ namespace ConsoleApp1
         {
             try
             {
-                removeIceFromInventory = numberOfPitchers * iceForRecipe;
-                return removeIceFromInventory;
+                Icee = Pitchers * iceForRecipe;
+                return Icee;
             }
             catch (Exception)
             {
@@ -167,8 +167,8 @@ namespace ConsoleApp1
         {
             try
             {
-                removeCupFromInventory = numberOfPitchers * cupsForRecipe;
-                return removeCupFromInventory;
+                Cups = Pitchers * cupsForRecipe;
+                return Cups;
             }
             catch (Exception)
             {
